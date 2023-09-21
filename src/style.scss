@@ -3,3 +3,18 @@
   width: 600px;
   height: 300px;
 }
+.swiper-slide {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  & > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .text {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    position: absolute;
+  }
+}
